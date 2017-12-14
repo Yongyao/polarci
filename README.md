@@ -1,6 +1,6 @@
 # polarci
 
-The Polar CI Portal is a one stop portal that makes it easy for users to discover and access polar-related geospatial resources available across different online environments. Specifically, it includes several features: 
+The Polar CI Portal is a one stop portal that makes it easy for users to discover and access polar-related geospatial resources available across different online environments. Specifically, it includes a few key features: 
 * A lightweight web engine framework is developed to search geospatial resources; 
 * A data warehouse is built to harvest, store, search, and distribute geospatial information; 
 * A harvesting middleware is established to harvest data from different online environments and convert them into formats that data warehouse supports; 
