@@ -1,0 +1,102 @@
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\ServiceConfiguration.cscfg
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\ValidationIssues.xml
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\CSWQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\GeoSearchTestPage.aspx
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\GeoSearchTestPage.html
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\OtherQueryFunctionsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\QualityQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\Silverlight.js
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\StatisticsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\Web.config
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\bin\GeoSearch.Web.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\bin\GeoSearch.Web.pdb
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\approot\ClientBin\GeoSearch.xap
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\RuntimeSetup.Manifest
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\Diagnostics.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\IISConfigurator.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\Microsoft.WindowsAzure.Internal.RuntimeServer.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\msshrtmi.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\mswasr.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\mswasri.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaHostBootstrapper.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaIISHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaRuntimeProxy.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaWebHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaWorkerHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\Diagnostics.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\IISConfigurator.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\Microsoft.WindowsAzure.Internal.RuntimeServer.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\msshrtmi.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\mswasr.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\mswasri.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\WaHostBootstrapper.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\WaIISHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\WaRuntimeProxy.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\WaWebHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x86\WaWorkerHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\FileListener.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonAgent.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonAgentHost.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonConfig.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonDiagnostics.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonEvents.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonNetTransport.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonQuery.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\MonTables.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\secutil.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\SysCounterListener.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\SystemEventsListener.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\schema\1.0\ma.xsd
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\schema\1.0\query.xsd
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\diagnostics\x64\monitor\schema\1.0\shared.xsd
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\__entrypoint.txt
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\base\x64\WaIISHost.exe.config
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\plugins\Diagnostics\Diagnostics.csplugin
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\plugins\Diagnostics\DiagnosticsAgent.exe
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\plugins\Diagnostics\mswapd.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\roles\GeoSearch.Web\RoleModel.xml
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\ServiceDefinition.build.rd
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\ServiceDefinition.build.rdsc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\bin\Release\cloudDeploy.csx\ServiceDefinition.build.csdef
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.dll
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.pdb
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\ClientBin\GeoSearch.xap
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\CSWQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.aspx
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.html
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\OtherQueryFunctionsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\QualityQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\Silverlight.js
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\StatisticsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch\cloudDeploy\obj\Release\GeoSearch.Web\Web.config
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ServiceConfiguration.cscfg
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ServiceDefinition.csdef
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ValidationIssues.xml
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.dll
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.pdb
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\ClientBin\GeoSearch.xap
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\CSWQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.aspx
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.html
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\OtherQueryFunctionsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\QualityQueryService.svc
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\Silverlight.js
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\StatisticsService.svc
+E:\Silverlight开发相关\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\Web.config
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ServiceConfiguration.cscfg
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ServiceDefinition.csdef
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\bin\Release\ValidationIssues.xml
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.dll
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\bin\GeoSearch.Web.pdb
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\ClientBin\GeoSearch.xap
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\CSWQueryService.svc
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.aspx
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\GeoSearchTestPage.html
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\OtherQueryFunctionsService.svc
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\QualityQueryService.svc
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\Silverlight.js
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\StatisticsService.svc
+E:\Silverlight Development\Projects\GeoSearch-cisc-2012-07-23\cloudDeploy\obj\Release\GeoSearch.Web\Web.config

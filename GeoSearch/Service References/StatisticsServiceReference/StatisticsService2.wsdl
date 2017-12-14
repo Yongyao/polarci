@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="cisc.gmu.edu/StatisticsService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="cisc.gmu.edu/StatisticsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="cisc.gmu.edu/StatisticsService/Imports">
+      <xsd:import schemaLocation="http://localhost:57278/StatisticsService.svc?xsd=xsd0" namespace="cisc.gmu.edu/StatisticsService" />
+      <xsd:import schemaLocation="http://localhost:57278/StatisticsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57278/StatisticsService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:57278/StatisticsService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="StatisticsService_getVisitIPAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVisitIPAddress" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getVisitIPAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVisitIPAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getLocationFromIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationFromIP" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getLocationFromIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationFromIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getIPFromDNS_InputMessage">
+    <wsdl:part name="parameters" element="tns:getIPFromDNS" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getIPFromDNS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getIPFromDNSResponse" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getServerInfoFromURLS_InputMessage">
+    <wsdl:part name="parameters" element="tns:getServerInfoFromURLS" />
+  </wsdl:message>
+  <wsdl:message name="StatisticsService_getServerInfoFromURLS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getServerInfoFromURLSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StatisticsService">
+    <wsdl:operation name="getVisitIPAddress">
+      <wsdl:input wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getVisitIPAddress" message="tns:StatisticsService_getVisitIPAddress_InputMessage" />
+      <wsdl:output wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getVisitIPAddressResponse" message="tns:StatisticsService_getVisitIPAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocationFromIP">
+      <wsdl:input wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getLocationFromIP" message="tns:StatisticsService_getLocationFromIP_InputMessage" />
+      <wsdl:output wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getLocationFromIPResponse" message="tns:StatisticsService_getLocationFromIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getIPFromDNS">
+      <wsdl:input wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getIPFromDNS" message="tns:StatisticsService_getIPFromDNS_InputMessage" />
+      <wsdl:output wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getIPFromDNSResponse" message="tns:StatisticsService_getIPFromDNS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getServerInfoFromURLS">
+      <wsdl:input wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getServerInfoFromURLS" message="tns:StatisticsService_getServerInfoFromURLS_InputMessage" />
+      <wsdl:output wsaw:Action="cisc.gmu.edu/StatisticsService/StatisticsService/getServerInfoFromURLSResponse" message="tns:StatisticsService_getServerInfoFromURLS_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

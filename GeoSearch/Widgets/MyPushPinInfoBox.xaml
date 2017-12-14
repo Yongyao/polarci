@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="GeoSearch.MyPushPinInfoBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:converter="clr-namespace:GeoSearch"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <UserControl.Resources>
+        <converter:BBoxStringConverter x:Key="BBoxStringConverter" />
+        <converter:BingMapsButtonVisibleConverter x:Key="BingMapsButtonVisibleConverter" />
+    </UserControl.Resources>
+    <Border x:Name="Infobox" MinHeight="100" MaxHeight="200" Width="300" Background="Black" 
+                                Opacity="0.7" BorderBrush="White" BorderThickness="2" CornerRadius="5">
+        <StackPanel>
+            <Grid>
+                <!--<HyperlinkButton x:Name="Title_TextBlock" Foreground="White" FontSize="12" Padding="5" Width="280"
+                     Grid.Row="0" HorizontalAlignment="Left" Tag="{Binding MetadataAccessURL}" Click="HyperlinkButton_RecordItemTitle_Click">
+                    <TextBlock Foreground="White" FontSize="12" Text="{Binding Title}"/>
+                </HyperlinkButton>-->
+                        <!--<HyperlinkButton x:Name="Title_TextBlock" Foreground="White" FontSize="12" Padding="5" Width="280"
+                     Grid.Row="0" HorizontalAlignment="Left" Content="{Binding Title}" Tag="{Binding MetadataAccessURL}" Click="HyperlinkButton_RecordItemTitle_Click"/>-->
+                <TextBlock x:Name="Title_TextBlock" Foreground="White" FontSize="12" Padding="5" Width="280"
+                     TextWrapping="Wrap" Grid.Row="0" HorizontalAlignment="Left" Text="{Binding Title}" Tag="{Binding MetadataAccessURL}" MouseLeftButtonDown="RecordItemTitle_Click"/>
+                <Button Click="PinInfoBox_Button_Close_Click" Name="btnClose" Tag="Close" Margin="5" Background="Black" 
+                    HorizontalAlignment="Right" VerticalAlignment="Top">
+                    <TextBlock>X</TextBlock>
+                </Button>
+            </Grid>
+            <!--<TextBox x:Name="BBox_Text" Foreground="Black" FontSize="10" Width="265"
+                                    TextWrapping="Wrap" Height="Auto" Grid.Row="1" Text="{Binding BBox, Converter={StaticResource BBoxStringConverter}}" Style="{StaticResource ReadOnlyTextBoxStyle}" />
+            <TextBox x:Name="Provider" Foreground="White" FontSize="10" Width="265" Margin="0,5,0,0" 
+                                    TextWrapping="Wrap" Height="Auto" Grid.Row="1" Text="{Binding Provider}" Style="{StaticResource ReadOnlyTextBoxStyle}" />
+            <TextBox x:Name="Description_TextBlock" Foreground="White" FontSize="10" Width="265" Margin="0,5,0,0" 
+                                    TextWrapping="Wrap" Height="Auto" Grid.Row="1" Text="{Binding Abstract}" Style="{StaticResource ReadOnlyTextBoxStyle}" />-->
+
+            <TextBlock x:Name="BBox_Text" Foreground="White" FontSize="10" Padding="5" Width="265"
+                                    TextWrapping="Wrap" MaxHeight="40" Grid.Row="1" Text="{Binding Path=bbox, Converter={StaticResource BBoxStringConverter}}"/>
+            <TextBlock x:Name="Provider" Foreground="White" FontSize="10" Padding="5" Width="265"
+                                    TextWrapping="Wrap" MaxHeight="20" Grid.Row="1" Text="{Binding Provider}" TextTrimming="WordEllipsis"/>
+            <TextBlock x:Name="Description_TextBlock" Foreground="White" FontSize="10" Padding="5" Width="265"
+                                    TextWrapping="Wrap" MaxHeight="40" Grid.Row="1" Text="{Binding Abstract}" TextTrimming="WordEllipsis"/>
+            <StackPanel HorizontalAlignment="Left" Height="30">
+                <Button Name="BingMapsButton" Width="70" Height="23" Margin="6,0,0,0" Content="Bing Maps" Visibility="{Binding Path=Type, Converter={StaticResource BingMapsButtonVisibleConverter}}" Click="BingMapsButton_Click"  Tag="{Binding RealServiceURL}">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Background="#FFFFFFAF">
+                            <StackPanel>
+                                <ContentControl Content="Visualize OGC WMS in Bing Maps"/>
+                            </StackPanel>
+                        </ToolTip >
+                    </ToolTipService.ToolTip>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

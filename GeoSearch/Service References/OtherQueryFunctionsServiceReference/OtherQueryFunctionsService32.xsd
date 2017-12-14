@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="cisc.gmu.edu/OtherQueryFunctionsService" elementFormDefault="qualified" targetNamespace="cisc.gmu.edu/OtherQueryFunctionsService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57278/OtherQueryFunctionsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" />
+  <xs:element name="getRecordDetailMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MetadataAccessURL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecordDetailMetadataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getRecordDetailMetadataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllLayerNamesOfWMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="urlstring" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllLayerNamesOfWMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getAllLayerNamesOfWMSResult" nillable="true" type="q1:WMSLayers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHierachicalLayersOfWMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="urlstring" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHierachicalLayersOfWMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getHierachicalLayersOfWMSResult" nillable="true" type="q2:HierachicalWMSLayers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

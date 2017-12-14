@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GeoSearch.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57278/CSWQueryService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="CSWGetRecordsSearchResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MetadataRepositoryURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SearchStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="elementSet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nextRecord" type="xs:int" />
+      <xs:element minOccurs="0" name="numberOfRecordsMatched" type="xs:int" />
+      <xs:element minOccurs="0" name="numberOfRecordsReturned" type="xs:int" />
+      <xs:element minOccurs="0" name="recordList" nillable="true" type="tns:ArrayOfRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CSWGetRecordsSearchResults" nillable="true" type="tns:CSWGetRecordsSearchResults" />
+  <xs:complexType name="ArrayOfRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Record" nillable="true" type="tns:Record" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecord" nillable="true" type="tns:ArrayOfRecord" />
+  <xs:complexType name="Record">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abstract" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccessURL" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DescriptiveKeywords" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Formats" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="GeneralType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GeoExtensionDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MetadataAccessURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Provider" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quality" type="xs:double" />
+      <xs:element minOccurs="0" name="RealServiceURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Relevance" type="xs:double" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SBAs" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ServerLocationDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URLLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bbox" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="isDataCore" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Record" nillable="true" type="tns:Record" />
+  <xs:complexType name="BBox">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BBox_CRS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lon" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lon" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BBox" nillable="true" type="tns:BBox" />
+  <xs:complexType name="SBAVocabulary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfSBAVocabulary" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parent" nillable="true" type="tns:SBAVocabulary" />
+      <xs:element minOccurs="0" name="SBAVocabularyID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isSelected" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SBAVocabulary" nillable="true" type="tns:SBAVocabulary" />
+  <xs:complexType name="ArrayOfSBAVocabulary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SBAVocabulary" nillable="true" type="tns:SBAVocabulary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSBAVocabulary" nillable="true" type="tns:ArrayOfSBAVocabulary" />
+  <xs:complexType name="SearchingContent">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Keywords" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="exactPhrase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isNoResourceTypeSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="resourceIdentificationKeywords_GEOSSDataCORE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resourceTypesTree" nillable="true" type="tns:ResourceType" />
+      <xs:element minOccurs="0" name="when_FromTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="when_TimeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="when_ToTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="when_isAnytime" type="xs:boolean" />
+      <xs:element minOccurs="0" name="where_East" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_North" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_Region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_Relationship" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_South" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_West" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="where_isAnyWhere" type="xs:boolean" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="withoutWordsInAnytext" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="wordsInAbstract" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="wordsInAnyText" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="wordsInTitle" nillable="true" type="q8:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchingContent" nillable="true" type="tns:SearchingContent" />
+  <xs:complexType name="ResourceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfResourceType" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parent" nillable="true" type="tns:ResourceType" />
+      <xs:element minOccurs="0" name="ResourceTypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isSelected" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResourceType" nillable="true" type="tns:ResourceType" />
+  <xs:complexType name="ArrayOfResourceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResourceType" nillable="true" type="tns:ResourceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResourceType" nillable="true" type="tns:ArrayOfResourceType" />
+</xs:schema>

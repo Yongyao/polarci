@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GeoSearch.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfServiceInfoForSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceInfoForSummary" nillable="true" type="tns:ServiceInfoForSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceInfoForSummary" nillable="true" type="tns:ArrayOfServiceInfoForSummary" />
+  <xs:complexType name="ServiceInfoForSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceInfoForSummary" nillable="true" type="tns:ServiceInfoForSummary" />
+  <xs:complexType name="ArrayOfServiceQoSInfoForSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceQoSInfoForSummary" nillable="true" type="tns:ServiceQoSInfoForSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceQoSInfoForSummary" nillable="true" type="tns:ArrayOfServiceQoSInfoForSummary" />
+  <xs:complexType name="ServiceQoSInfoForSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fgdcStatusCheckerScore" type="xs:double" />
+      <xs:element minOccurs="0" name="rankValue" type="xs:double" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceQoSInfoForSummary" nillable="true" type="tns:ServiceQoSInfoForSummary" />
+  <xs:complexType name="ArrayOfServiceInfoForHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceInfoForHistory" nillable="true" type="tns:ServiceInfoForHistory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceInfoForHistory" nillable="true" type="tns:ArrayOfServiceInfoForHistory" />
+  <xs:complexType name="ServiceInfoForHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="enddate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="startdate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceInfoForHistory" nillable="true" type="tns:ServiceInfoForHistory" />
+  <xs:complexType name="ServiceQoSInfoForHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="endDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="measurementInfoList" nillable="true" type="tns:ArrayOfServiceQoSInfoInOneMeasurement" />
+      <xs:element minOccurs="0" name="serviceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="startDateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceQoSInfoForHistory" nillable="true" type="tns:ServiceQoSInfoForHistory" />
+  <xs:complexType name="ArrayOfServiceQoSInfoInOneMeasurement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceQoSInfoInOneMeasurement" nillable="true" type="tns:ServiceQoSInfoInOneMeasurement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceQoSInfoInOneMeasurement" nillable="true" type="tns:ArrayOfServiceQoSInfoInOneMeasurement" />
+  <xs:complexType name="ServiceQoSInfoInOneMeasurement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FGDCScroe" type="xs:double" />
+      <xs:element minOccurs="0" name="measureDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="responseTime" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceQoSInfoInOneMeasurement" nillable="true" type="tns:ServiceQoSInfoInOneMeasurement" />
+  <xs:complexType name="WMSLayerInfoWithQoS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WMSLayersList" nillable="true" type="tns:ArrayOfWMSLayer" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSLayerInfoWithQoS" nillable="true" type="tns:WMSLayerInfoWithQoS" />
+  <xs:complexType name="ArrayOfWMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WMSLayer" nillable="true" type="tns:WMSLayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWMSLayer" nillable="true" type="tns:ArrayOfWMSLayer" />
+  <xs:complexType name="WMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="box" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rankValue" type="xs:double" />
+      <xs:element minOccurs="0" name="responseTime" type="xs:double" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSLayer" nillable="true" type="tns:WMSLayer" />
+  <xs:complexType name="BBox">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BBox_CRS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lon" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lon" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BBox" nillable="true" type="tns:BBox" />
+  <xs:complexType name="LayerInfoForHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="enddate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="layerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="startdate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LayerInfoForHistory" nillable="true" type="tns:LayerInfoForHistory" />
+  <xs:complexType name="LayerQoSInfoForHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="endDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="layerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="measurementInfoList" nillable="true" type="tns:ArrayOfLayerQoSInfoInOneMeasurement" />
+      <xs:element minOccurs="0" name="serviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="startDateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LayerQoSInfoForHistory" nillable="true" type="tns:LayerQoSInfoForHistory" />
+  <xs:complexType name="ArrayOfLayerQoSInfoInOneMeasurement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LayerQoSInfoInOneMeasurement" nillable="true" type="tns:LayerQoSInfoInOneMeasurement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLayerQoSInfoInOneMeasurement" nillable="true" type="tns:ArrayOfLayerQoSInfoInOneMeasurement" />
+  <xs:complexType name="LayerQoSInfoInOneMeasurement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FGDCScroe" type="xs:double" />
+      <xs:element minOccurs="0" name="measureDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="responseTime" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LayerQoSInfoInOneMeasurement" nillable="true" type="tns:LayerQoSInfoInOneMeasurement" />
+</xs:schema>

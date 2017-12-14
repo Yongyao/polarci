@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="cisc.gmu.edu/QualityQueryService" elementFormDefault="qualified" targetNamespace="cisc.gmu.edu/QualityQueryService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57278/QualityQueryService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" />
+  <xs:element name="getServiceQoSSummaryInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="serviceInfoList" nillable="true" type="q1:ArrayOfServiceInfoForSummary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getServiceQoSSummaryInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getServiceQoSSummaryInfoResult" nillable="true" type="q2:ArrayOfServiceQoSInfoForSummary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getServiceQoSHistoricalInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="serviceInfoList" nillable="true" type="q3:ArrayOfServiceInfoForHistory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getServiceQoSHistoricalInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getServiceQoSHistoricalInfoResult" nillable="true" type="q4:ServiceQoSInfoForHistory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getWMSLayersQoSSummaryInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="serviceInfo" nillable="true" type="q5:ServiceInfoForSummary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getWMSLayersQoSSummaryInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getWMSLayersQoSSummaryInfoResult" nillable="true" type="q6:WMSLayerInfoWithQoS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getWMSLayersQoSHistoricalInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="layerInfoForHistory" nillable="true" type="q7:LayerInfoForHistory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getWMSLayersQoSHistoricalInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getWMSLayersQoSHistoricalInfoResult" nillable="true" type="q8:LayerQoSInfoForHistory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

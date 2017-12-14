@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\GeoSearch" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="GeoSearch" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="LocalSave" publishMethod="FileSystem" replaceMatchingFiles="False" userName="administrator" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVpo4HfLjL0eFfmYIhTGWcwAAAAACAAAAAAAQZgAAAAEAACAAAAClM4IQklwte4rcgpa/Iwv4KsbdFcY1zpwBxenrLDURzQAAAAAOgAAAAAIAACAAAACxRB4/fWo6eyXUYAUQJXZ2sizzlKmZV97iU46qO/+zmiAAAACD27wI2Z6qWoG04UaDvwMGJdS51pEurzr04U2OJF39W0AAAADB6oFoOu9MHAUsYP4DFthA7HVQPPnS7MDMzZwgCKztofd/p8Kgu3qomC3iz+2BjXUp3xRDmsu9nq4jZTUQ7lkB" SelectedForPublish="True">
+    <file relUrl="GeoSearchTestPage.html" publishTime="03/05/2012 16:10:56" />
+    <file relUrl="GeoSearchTestPage.aspx" publishTime="04/10/2012 11:13:25" />
+    <file relUrl="ClientBin/GeoSearch.xap" publishTime="05/15/2012 16:05:08" />
+    <file relUrl="CSWQueryService.svc" publishTime="03/05/2012 16:38:01" />
+    <file relUrl="Web.config" publishTime="05/03/2012 14:01:04" />
+    <file relUrl="Silverlight.js" publishTime="03/05/2012 16:10:56" />
+    <file relUrl="QualityQueryService.svc" publishTime="03/05/2012 16:46:36" />
+    <file relUrl="bin/GeoSearch.Web.dll" publishTime="05/15/2012 15:52:18" />
+    <file relUrl="OtherQueryFunctionsService.svc" publishTime="03/05/2012 16:53:06" />
+    <file relUrl="StatisticsService.svc" publishTime="03/05/2012 16:55:45" />
+    <file relUrl="bin/GeoSearch.Web.pdb" publishTime="05/15/2012 15:52:18" />
+  </publishProfile>
+</publishData>

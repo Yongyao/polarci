@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="GeoSearch.Web.StatisticsService" CodeBehind="StatisticsService.svc.cs" %>

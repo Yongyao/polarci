@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GeoSearch.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WMSLayers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WMSURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="box" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="layersList" nillable="true" type="tns:ArrayOfWMSLayer" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSLayers" nillable="true" type="tns:WMSLayers" />
+  <xs:complexType name="BBox">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BBox_CRS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Lower_Lon" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="BBox_Upper_Lon" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BBox" nillable="true" type="tns:BBox" />
+  <xs:complexType name="ArrayOfWMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WMSLayer" nillable="true" type="tns:WMSLayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWMSLayer" nillable="true" type="tns:ArrayOfWMSLayer" />
+  <xs:complexType name="WMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="box" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rankValue" type="xs:double" />
+      <xs:element minOccurs="0" name="responseTime" type="xs:double" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WMSLayer" nillable="true" type="tns:WMSLayer" />
+  <xs:complexType name="HierachicalWMSLayers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WMSURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="allGetMapEnabledLayers_Number" type="xs:int" />
+      <xs:element minOccurs="0" name="latLonBBox" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="layersList" nillable="true" type="tns:ArrayOfCascadedWMSLayer" />
+      <xs:element minOccurs="0" name="otherCRSBBoxList" nillable="true" type="tns:ArrayOfBBox" />
+      <xs:element minOccurs="0" name="serviceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subLayers_Number" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HierachicalWMSLayers" nillable="true" type="tns:HierachicalWMSLayers" />
+  <xs:complexType name="ArrayOfCascadedWMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CascadedWMSLayer" nillable="true" type="tns:CascadedWMSLayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCascadedWMSLayer" nillable="true" type="tns:ArrayOfCascadedWMSLayer" />
+  <xs:complexType name="CascadedWMSLayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfCascadedWMSLayer" />
+      <xs:element minOccurs="0" name="canGetMap" type="xs:boolean" />
+      <xs:element minOccurs="0" name="extent_time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="extent_time_default" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="latLonBBox" nillable="true" type="tns:BBox" />
+      <xs:element minOccurs="0" name="legendURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="otherCRSBBoxList" nillable="true" type="tns:ArrayOfBBox" />
+      <xs:element minOccurs="0" name="queryable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="rankValue" type="xs:double" />
+      <xs:element minOccurs="0" name="responseTime" type="xs:double" />
+      <xs:element minOccurs="0" name="timeEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CascadedWMSLayer" nillable="true" type="tns:CascadedWMSLayer" />
+  <xs:complexType name="ArrayOfBBox">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BBox" nillable="true" type="tns:BBox" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBBox" nillable="true" type="tns:ArrayOfBBox" />
+</xs:schema>

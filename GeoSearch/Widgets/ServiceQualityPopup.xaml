@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="GeoSearch.ServiceQualityPopup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:myC="clr-namespace:GeoSearch"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style x:Key="CloseButton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="32"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+
+                    <ControlTemplate>
+                        <Border x:Name="brd1" Width="22" Height="22" CornerRadius="15">
+                            <TextBlock x:Name="txt1" Foreground="#222" TextAlignment="center" Text="r" FontSize="11" VerticalAlignment="center" FontFamily="Webdings"/>
+                            <Border.Background>
+                                <RadialGradientBrush GradientOrigin=".3, .3">
+                                    <GradientStop Color="#FFF" Offset=".15"/>
+                                    <GradientStop Color="#777" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <!--<Border HorizontalAlignment="Center" Height="auto" Width="auto" Background="#FFDEF0FF" CornerRadius="10" BorderThickness="5" BorderBrush="Black">
+        <Popup Name="ServiceQualityPage">
+            <myC:ServiceQualityInfoPanel HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="serviceQualityInfoPanel"/>
+        </Popup>
+    </Border>-->
+
+    
+    <Popup Name="ServiceQualityPage">
+        <Border HorizontalAlignment="Center" Height="auto" Width="auto" Background="#FFDEF0FF" CornerRadius="12" BorderThickness="4" BorderBrush="#FF81BFF5">
+            
+            <!--<StackPanel Margin="5, 7, 0, 5">
+                <Button Click="ClosePopup_Click" Content="Close" Style="{StaticResource CloseButton}"/>
+                <myC:ServiceQualityInfoPanel HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="serviceQualityInfoPanel"/>
+            </StackPanel>-->
+
+            <!--<Grid x:Name="Grid_ServiceQoS" Height="auto" Width="auto" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Click="ClosePopup_Click" Content="Close" Style="{StaticResource CloseButton}" Grid.Row="0" Grid.Column="1"/>
+                <myC:ServiceQualityInfoPanel HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="serviceQualityInfoPanel" Grid.Row="1" Grid.Column="0"/>
+            </Grid>-->
+
+            <Grid x:Name="Grid_ServiceQoS" Height="auto" Width="auto" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <myC:ServiceQualityInfoPanel HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="serviceQualityInfoPanel" Grid.Row="0" Grid.Column="0"/>
+                <Button Click="ClosePopup_Click" Content="Close" Style="{StaticResource CloseButton}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+    </Popup>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<UserControl xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"  x:Class="GeoSearch.SBAQuickSearchPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="clr-namespace:GeoSearch"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <converter:SBAVocabularyIconConverter x:Key="SBAVocabularyIconConverter" />
+        <sdk:HierarchicalDataTemplate x:Key="TreeItemTemplate_CheckBoxAndImage" ItemsSource="{Binding Children}">
+            <StackPanel Orientation="Horizontal">
+                <Image Height="26" Width="26" Stretch="Fill" Source="{Binding Path=SBAVocabularyID, Converter={StaticResource SBAVocabularyIconConverter}}" VerticalAlignment="Center"/>
+                <HyperlinkButton Content="{Binding Path=Name}" FontSize="14" FontWeight="Normal" VerticalAlignment="Center" Tag="{Binding Path=SBAVocabularyID}" Click="HyperlinkButton_Click">
+                    <!--<ToolTipService.ToolTip>
+                        <ToolTip Background="#FFFFFFAF">
+                            <StackPanel>
+                                <ContentControl Content="{Binding Path=Description}"/>
+                            </StackPanel>
+                        </ToolTip >
+                    </ToolTipService.ToolTip>-->
+                </HyperlinkButton>
+            </StackPanel>
+        </sdk:HierarchicalDataTemplate>
+    </UserControl.Resources>
+
+    <StackPanel HorizontalAlignment="Center" Background="Transparent">
+        <TextBlock Name="TextBox_Title" HorizontalAlignment="Center" Text="SBA" FontSize="15" FontWeight="Bold" Margin="5" >
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Browse Resources By Societal Benefit Areas(SBA)"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </TextBlock>
+        <sdk:TreeView Name="TreeView_SBAVocabulary" MaxHeight="600" MaxWidth="300" FontSize="14" BorderBrush="Gray" ItemTemplate="{StaticResource TreeItemTemplate_CheckBoxAndImage}"/>  
+    </StackPanel>
+</UserControl>

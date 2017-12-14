@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eef5a252-06d4-4ca8-9f33-2441b626f5bf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57278/CSWQueryService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CSWQueryService1.disco" MetadataType="Disco" ID="cd4f031e-ad6b-41d2-a6f8-646045e00bc0" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?disco" />
+    <MetadataFile FileName="CSWQueryService2.wsdl" MetadataType="Wsdl" ID="69a894f6-359c-4f23-88ef-8c702a81d95d" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CSWQueryService4.xsd" MetadataType="Schema" ID="359c4b48-5ddf-4732-902c-0ad6f02b8f98" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CSWQueryService41.xsd" MetadataType="Schema" ID="a016c008-3dcb-4f4a-a5b0-f0765a34d88a" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CSWQueryService42.xsd" MetadataType="Schema" ID="1c07f657-55fe-4617-9acc-45e5ee1c4e0c" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CSWQueryService21.wsdl" MetadataType="Wsdl" ID="7769f59d-726b-4d37-960f-07bc815d9bdc" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?wsdl" />
+    <MetadataFile FileName="CSWQueryService43.xsd" MetadataType="Schema" ID="f8874687-f3fc-414d-8cfc-277a64f343a1" SourceId="1" SourceUrl="http://localhost:57278/CSWQueryService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

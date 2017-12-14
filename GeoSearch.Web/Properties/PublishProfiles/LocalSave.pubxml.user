@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2013-11-22T17:23:28.0000000-05:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\oceanci</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/GeoSearch.Web.dll">
+      <publishTime>06/10/2015 15:21:55</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>09/26/2013 13:00:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>12/20/2013 13:13:04</publishTime>
+    </File>
+    <File Include="ClientBin/GeoSearch.xap">
+      <publishTime>06/16/2015 16:14:47</publishTime>
+    </File>
+    <File Include="CSWQueryService.svc">
+      <publishTime>11/22/2013 17:23:28</publishTime>
+    </File>
+    <File Include="GeoSearchTestPage.aspx">
+      <publishTime>06/08/2015 15:34:35</publishTime>
+    </File>
+    <File Include="GeoSearchTestPage.html">
+      <publishTime>06/03/2015 14:10:31</publishTime>
+    </File>
+    <File Include="OtherQueryFunctionsService.svc">
+      <publishTime>11/22/2013 17:23:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/20/2013 13:13:22</publishTime>
+    </File>
+    <File Include="QualityQueryService.svc">
+      <publishTime>11/22/2013 17:23:28</publishTime>
+    </File>
+    <File Include="Silverlight.js">
+      <publishTime>11/22/2013 17:23:28</publishTime>
+    </File>
+    <File Include="StatisticsService.svc">
+      <publishTime>11/22/2013 17:23:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/08/2015 17:26:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

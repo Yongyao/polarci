@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="cisc.gmu.edu/MetadataSearching" elementFormDefault="qualified" targetNamespace="cisc.gmu.edu/MetadataSearching" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57278/CSWQueryService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GeoSearch.Web" />
+  <xs:element name="getRecords_BasicSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="searchingContent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startPosition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRecords" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CSWURL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queryServicePerformanceScoreAtServerSide" type="xs:boolean" />
+        <xs:element minOccurs="0" name="calculateRelevanceAtServerSide" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecords_BasicSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getRecords_BasicSearchResult" nillable="true" type="q1:CSWGetRecordsSearchResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecords_QuickSearchBySBA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="vocabulary" nillable="true" type="q2:SBAVocabulary" />
+        <xs:element minOccurs="0" name="startPosition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRecords" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CSWURL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queryServicePerformanceScoreAtServerSide" type="xs:boolean" />
+        <xs:element minOccurs="0" name="calculateRelevanceAtServerSide" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecords_QuickSearchBySBAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getRecords_QuickSearchBySBAResult" nillable="true" type="q3:CSWGetRecordsSearchResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecords_AdvancedSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="searchingContent" nillable="true" type="q4:SearchingContent" />
+        <xs:element minOccurs="0" name="startPosition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRecords" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CSWURL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queryServicePerformanceScoreAtServerSide" type="xs:boolean" />
+        <xs:element minOccurs="0" name="calculateRelevanceAtServerSide" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRecords_AdvancedSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GeoSearch.Web" minOccurs="0" name="getRecords_AdvancedSearchResult" nillable="true" type="q5:CSWGetRecordsSearchResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

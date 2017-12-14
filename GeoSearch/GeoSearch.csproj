@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EF05DAE-DF70-49E8-9EBF-EBC97F7E19E0}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoSearch</RootNamespace>
+    <AssemblyName>GeoSearch</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>GeoSearch.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>GeoSearch.App</SilverlightAppEntry>
+    <TestPageFileName>GeoSearchTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>..\GeoSearch.Web\GeoSearch.Web.csproj</LinkedServerProject>
+    <InBrowserSettingsFile>Properties\InBrowserSettings.xml</InBrowserSettingsFile>
+    <RequireInBrowserElevation>true</RequireInBrowserElevation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImageTools">
+      <HintPath>C:\Users\gzp\Desktop\ImageTools 0.30\bin\SL4\ImageTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.Controls">
+      <HintPath>C:\Users\gzp\Desktop\ImageTools 0.30\bin\SL4\ImageTools.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Gif">
+      <HintPath>C:\Users\gzp\Desktop\ImageTools 0.30\bin\SL4\ImageTools.IO.Gif.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maps.MapControl">
+      <HintPath>C:\Program Files (x86)\Bing Maps Silverlight Control\V1\Libraries\Microsoft.Maps.MapControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maps.MapControl.Common">
+      <HintPath>C:\Program Files (x86)\Bing Maps Silverlight Control\V1\Libraries\Microsoft.Maps.MapControl.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Controls.WatermarkedTextBox">
+      <HintPath>..\..\..\Demos\Microsoft.Windows.Controls.WatermarkedTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Sincorde.Library">
+      <HintPath>..\..\..\Demos\Sincorde\Sincorde\Library\Bin\Debug\Sincorde.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Pivot, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Toolkit.Internals, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ConstantCollection.cs" />
+    <Compile Include="Classes\Converters.cs" />
+    <Compile Include="Classes\CustomizeValidation.cs" />
+    <Compile Include="Classes\CustomTextBlock.cs" />
+    <Compile Include="Classes\MetadtaDetailParse.cs" />
+    <Compile Include="Classes\metaModel\Attributes_Dataset.cs" />
+    <Compile Include="Classes\metaModel\Attributes_Service.cs" />
+    <Compile Include="Classes\metaModel\BoundingBox.cs" />
+    <Compile Include="Classes\metaModel\ContainsOperation.cs" />
+    <Compile Include="Classes\metaModel\DescriptiveKeyword.cs" />
+    <Compile Include="Classes\metaModel\Metadata.cs" />
+    <Compile Include="Classes\metaModel\OnlineResource.cs" />
+    <Compile Include="Classes\ClientSideRecordModel\MyStringList.cs" />
+    <Compile Include="Classes\QualityQueryFunctions.cs" />
+    <Compile Include="Classes\ResourceTypeTree.cs" />
+    <Compile Include="Classes\RetrieveNumber.cs" />
+    <Compile Include="Classes\SBAVocabularyTree.cs" />
+    <Compile Include="Classes\RecordsSearchFunctions.cs" />
+    <Compile Include="Classes\WMSTileSource.cs" />
+    <Compile Include="Classes\OtherQueryFuntions.cs" />
+    <Compile Include="Classes\ClientSideRecordModel\ClientSideRecord.cs" />
+    <Compile Include="Classes\ClientSideRecordModel\StringList.cs" />
+    <Compile Include="Widgets\Banner.xaml.cs">
+      <DependentUpon>Banner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\CheckBoxWithImageText-BingMap.xaml.cs">
+      <DependentUpon>CheckBoxWithImageText-BingMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\CheckBoxWithImageText.xaml.cs">
+      <DependentUpon>CheckBoxWithImageText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\CheckBoxWithMultiImagesText_BingMap.xaml.cs">
+      <DependentUpon>CheckBoxWithMultiImagesText_BingMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\PivotViewerContainer.xaml.cs">
+      <DependentUpon>PivotViewerContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\RadioButtonWithTextAndMultiIcon.xaml.cs">
+      <DependentUpon>RadioButtonWithTextAndMultiIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdvancedSearchPage.xaml.cs">
+      <DependentUpon>AdvancedSearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HelpPage.xaml.cs">
+      <DependentUpon>HelpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchingResultPage.xaml.cs">
+      <DependentUpon>SearchingResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CSWQueryServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OtherQueryFunctionsServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\QualityQueryServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StatisticsServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Utilities.cs" />
+    <Compile Include="Widgets\GeneralPopup.xaml.cs">
+      <DependentUpon>GeneralPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\MetadataDetailChildWindow.xaml.cs">
+      <DependentUpon>MetadataDetailChildWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\MetadataDetailWindow.xaml.cs">
+      <DependentUpon>MetadataDetailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\MetadataPanel.xaml.cs">
+      <DependentUpon>MetadataPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\MyPushPinInfoBox.xaml.cs">
+      <DependentUpon>MyPushPinInfoBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\PopupPageToShowMetadataDetails.xaml.cs">
+      <DependentUpon>PopupPageToShowMetadataDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\ResponseTimeWindows.xaml.cs">
+      <DependentUpon>ResponseTimeWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\SBAQuickSearchPanel.xaml.cs">
+      <DependentUpon>SBAQuickSearchPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\SBAQuickSearchPopup.xaml.cs">
+      <DependentUpon>SBAQuickSearchPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\ServiceQualityInfoPanel.xaml.cs">
+      <DependentUpon>ServiceQualityInfoPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\ServiceQualityPopup.xaml.cs">
+      <DependentUpon>ServiceQualityPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\WMSLayersSelectionPage.xaml.cs">
+      <DependentUpon>WMSLayersSelectionPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Widgets\Banner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\CheckBoxWithImageText-BingMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widgets\CheckBoxWithImageText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\CheckBoxWithMultiImagesText_BingMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widgets\PivotViewerContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widgets\RadioButtonWithTextAndMultiIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\AdvancedSearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\HelpPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\SearchingResultPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\GeneralPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\MetadataDetailChildWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\MetadataDetailWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\MetadataPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\MyPushPinInfoBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widgets\PopupPageToShowMetadataDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\ResponseTimeWindows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\SBAQuickSearchPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\SBAQuickSearchPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\ServiceQualityInfoPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\ServiceQualityPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Widgets\WMSLayersSelectionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService2.wsdl" />
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService21.wsdl" />
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSWQueryServiceReference\GeoSearch.CSWQueryServiceReference.CSWGetRecordsSearchResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\OtherQueryFunctionsServiceReference\configuration.svcinfo" />
+    <None Include="Service References\OtherQueryFunctionsServiceReference\GeoSearch.OtherQueryFunctionsServiceReference.HierachicalWMSLayers.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\GeoSearch.OtherQueryFunctionsServiceReference.WMSLayers.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService2.wsdl" />
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService21.wsdl" />
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OtherQueryFunctionsServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\GeoSearch.QualityQueryServiceReference.LayerQoSInfoForHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\GeoSearch.QualityQueryServiceReference.ServiceQoSInfoForHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\GeoSearch.QualityQueryServiceReference.ServiceQoSInfoForSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\GeoSearch.QualityQueryServiceReference.WMSLayerInfoWithQoS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\QualityQueryServiceReference\configuration.svcinfo" />
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService2.wsdl" />
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService21.wsdl" />
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualityQueryServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\StatisticsServiceReference\configuration.svcinfo" />
+    <None Include="Service References\StatisticsServiceReference\GeoSearch.StatisticsServiceReference.ServerInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\StatisticsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\StatisticsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\StatisticsService2.wsdl" />
+    <None Include="Service References\StatisticsServiceReference\StatisticsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StatisticsServiceReference\StatisticsService21.wsdl" />
+    <None Include="Service References\StatisticsServiceReference\StatisticsService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="images\BingMaps\FullScreen.png" />
+    <Resource Include="images\BingMaps\FullScreenExit.png" />
+    <None Include="Service References\OtherQueryFunctionsServiceReference\OtherQueryFunctionsService1.disco" />
+    <None Include="Service References\CSWQueryServiceReference\CSWQueryService1.disco" />
+    <None Include="Service References\QualityQueryServiceReference\QualityQueryService1.disco" />
+    <None Include="Service References\StatisticsServiceReference\StatisticsService1.disco" />
+    <Resource Include="images\BingMaps\Trash-can-icon.png" />
+    <Resource Include="images\BingMaps\Trash-icon.png" />
+    <Resource Include="images\BingMaps\Actions-player.png" />
+    <Resource Include="images\BingMaps\legend-icon.png" />
+    <Resource Include="images\BingMaps\Animation\Backward.png" />
+    <Resource Include="images\BingMaps\Animation\Forward.png" />
+    <Resource Include="images\BingMaps\Animation\Pause.png" />
+    <Resource Include="images\BingMaps\Animation\Play.png" />
+    <Resource Include="images\BingMaps\Animation\Stop.png" />
+    <Resource Include="images\BingMaps\Legend1.gif" />
+    <Resource Include="images\BingMaps\Legend1.png" />
+    <None Include="Properties\InBrowserSettings.xml" />
+    <Resource Include="images\CISClogo.png" />
+    <Resource Include="images\NSF_Logo.PNG" />
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\closeButton1.png" />
+    <Resource Include="images\closeButton2.png" />
+    <Resource Include="images\closeButton3.png" />
+    <Resource Include="images\closeButton4.png" />
+    <Resource Include="images\extentBackground.jpg" />
+    <Resource Include="images\information.png" />
+    <Resource Include="images\NasaPNG.png" />
+    <Resource Include="images\Organizer\ESRI.png" />
+    <Resource Include="images\Organizer\MU.png" />
+    <Resource Include="images\Organizer\NASA.png" />
+    <Resource Include="images\Organizer\NOAA.png" />
+    <Resource Include="images\Organizer\USGS.png" />
+    <Resource Include="images\QoS\0bars.png" />
+    <Resource Include="images\QoS\1bars.png" />
+    <Resource Include="images\QoS\2bars.png" />
+    <Resource Include="images\QoS\3bars.png" />
+    <Resource Include="images\QoS\4bars.png" />
+    <Resource Include="images\QoS\5bars.png" />
+    <Resource Include="images\relevance.png" />
+    <Resource Include="images\ResourceIdentification\GEO.png" />
+    <Resource Include="images\ResourceIdentification\GEO_Data-CORE.png" />
+    <Resource Include="images\resourceTypes\applications.png" />
+    <Resource Include="images\resourceTypes\CatalogServer.png" />
+    <Resource Include="images\resourceTypes\CSW.png" />
+    <Resource Include="images\resourceTypes\dataset.png" />
+    <Resource Include="images\resourceTypes\dataset1.png" />
+    <Resource Include="images\resourceTypes\directories.png" />
+    <Resource Include="images\resourceTypes\document.png" />
+    <Resource Include="images\resourceTypes\downloadableData.png" />
+    <Resource Include="images\resourceTypes\exec.png" />
+    <Resource Include="images\resourceTypes\Folder.png" />
+    <Resource Include="images\resourceTypes\globe.png" />
+    <Resource Include="images\resourceTypes\Initiatives.png" />
+    <Resource Include="images\resourceTypes\Layers-icon.png" />
+    <Resource Include="images\resourceTypes\map.png" />
+    <Resource Include="images\resourceTypes\models.png" />
+    <Resource Include="images\resourceTypes\network_Service.png" />
+    <Resource Include="images\resourceTypes\network_Service1.png" />
+    <Resource Include="images\resourceTypes\pdf.gif" />
+    <Resource Include="images\resourceTypes\photo.png" />
+    <Resource Include="images\resourceTypes\RSS.png" />
+    <Resource Include="images\resourceTypes\WCS.png" />
+    <Resource Include="images\resourceTypes\websitesAndDocuments.png" />
+    <Resource Include="images\resourceTypes\WFS.png" />
+    <Resource Include="images\resourceTypes\WMS.png" />
+    <Resource Include="images\SBA\icon_agriculture_off.png" />
+    <Resource Include="images\SBA\icon_biodiver_off.png" />
+    <Resource Include="images\SBA\icon_climate_off.png" />
+    <Resource Include="images\SBA\icon_disaster_off.png" />
+    <Resource Include="images\SBA\icon_ecosystem_off.png" />
+    <Resource Include="images\SBA\icon_energy_off.png" />
+    <Resource Include="images\SBA\icon_health_off.png" />
+    <Resource Include="images\SBA\icon_water_off.png" />
+    <Resource Include="images\SBA\icon_weather_off.png" />
+    <Resource Include="images\SBA\subtype.png" />
+    <Resource Include="images\Status-image-loading-icon.png" />
+    <Resource Include="images\web_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CSWQueryServiceReference\" />
+    <WCFMetadataStorage Include="Service References\OtherQueryFunctionsServiceReference\" />
+    <WCFMetadataStorage Include="Service References\QualityQueryServiceReference\" />
+    <WCFMetadataStorage Include="Service References\StatisticsServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSWQueryServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSWQueryServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSWQueryServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

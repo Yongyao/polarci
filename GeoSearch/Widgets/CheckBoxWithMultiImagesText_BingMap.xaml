@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="GeoSearch.Widgets.CheckBoxWithMultiImagesText_BingMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:ImageTools="clr-namespace:ImageTools.Controls;assembly=ImageTools.Controls" 
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel Name="StackPanelArea1" Background="Black" Margin="0">
+        <StackPanel Name="StackPanel_Icons" Orientation="Horizontal" Background="Black" Margin="0">
+        <CheckBox Name="isSelected_CheckBox" VerticalAlignment="Center" IsChecked="False" Padding="0" Margin="0"/>
+        <Image Name="Image_NodeType" Source="/GeoSearch;component/images/resourceTypes/map.png" Height="24" Width="24" Stretch="Fill"  VerticalAlignment="Center" Margin="2,0,0,0">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Click to show or hide the opacity controller of this layer"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image Name="Image_Legend" Source="/GeoSearch;component/images/BingMaps/legend-icon.png" Height="24" Width="24" Stretch="Fill"  VerticalAlignment="Center" Margin="2,0,0,0" Visibility="Collapsed">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Click to show or hide Legend"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image Name="Image_Animation" Source="/GeoSearch;component/images/BingMaps/Actions-player.png" Height="24" Width="24" Stretch="Fill"  VerticalAlignment="Center" Margin="2,0,0,0" Visibility="Collapsed">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Click to show time-enable layer's animation"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </Image>
+            <TextBlock Name="Title"  Text="xxxxxxx" Foreground="White" FontStyle="Normal" VerticalAlignment="Center" Margin="3,0,0,0" FontSize="14" Padding="0">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="WMS Layer's Name"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </TextBlock>
+        <CheckBox Name="showCombinedLayer_CheckBox" VerticalAlignment="Center" IsChecked="False" Padding="0" Margin="0" Visibility="Collapsed">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Show combined layer directly"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </CheckBox>
+        <Image Height="24" Width="24" Name="Image_removeTreeViewItem" Source="/GeoSearch;component/images/BingMaps/Trash-icon.png" Stretch="Fill"  VerticalAlignment="Center" Margin="2,0,0,0" Visibility="Collapsed">
+            <ToolTipService.ToolTip>
+                <ToolTip Background="#FFFFFFAF">
+                    <StackPanel>
+                        <ContentControl Content="Remove this WMS from Tree View"/>
+                    </StackPanel>
+                </ToolTip >
+            </ToolTipService.ToolTip>
+        </Image>
+        </StackPanel>
+        <StackPanel Name="CurrentLayerOpacityController_StackPanel" Orientation="Horizontal" Visibility="Collapsed" HorizontalAlignment="Left" Margin="20,0,0,2">
+            <TextBlock Foreground="White" FontSize="12" Width="auto" HorizontalAlignment="Left" Text="Opacity:" FontWeight="Normal" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Background="#FFFFFFAF">
+                            <StackPanel>
+                                <ContentControl Content="The opacity of this layer"/>
+                            </StackPanel>
+                        </ToolTip >
+                   </ToolTipService.ToolTip></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+                <TextBlock Foreground="White" FontSize="11" Width="30" HorizontalAlignment="Center" Text="0" FontWeight="Normal" VerticalAlignment="Center" TextAlignment="Center">
+                                                        <ToolTipService.ToolTip>
+                                                            <ToolTip Background="#FFFFFFAF">
+                                                                <StackPanel>
+                                                                    <ContentControl Content="Transparent"/>
+                                                                </StackPanel>
+                                                            </ToolTip >
+                                                        </ToolTipService.ToolTip>
+                </TextBlock>
+                <Slider Name="WMSLayerOpacity_Slider" Width="130" HorizontalAlignment="Left" Minimum="0" Maximum="1" Value="0.5"/>
+                <TextBlock Foreground="White" FontSize="11" Width="20" HorizontalAlignment="Center" Text="1" FontWeight="Normal" VerticalAlignment="Center" TextAlignment="Center">
+                                                        <ToolTipService.ToolTip>
+                                                            <ToolTip Background="#FFFFFFAF">
+                                                                <StackPanel>
+                                                                    <ContentControl Content="Opacity"/>
+                                                                </StackPanel>
+                                                            </ToolTip >
+                                                        </ToolTipService.ToolTip>
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <ScrollViewer Name="ScrollViewer_Legend" MaxWidth="400" MaxHeight="80" BorderThickness="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Visibility="Collapsed" HorizontalAlignment="Left" Margin="20,0,0,0" Padding="0">
+            <StackPanel>
+                <Image Name="Image_Legend_Content" Source="/GeoSearch;component/images/BingMaps/Legend1.png" Height="auto" Width="auto" VerticalAlignment="Center" Margin="0">
+                <ToolTipService.ToolTip>
+                    <ToolTip Background="#FFFFFFAF">
+                        <StackPanel>
+                            <ContentControl Content="The map legend of this layer"/>
+                        </StackPanel>
+                    </ToolTip >
+                </ToolTipService.ToolTip>
+            </Image>
+            <ImageTools:AnimatedImage x:Name="Image_Legend_GIF_Content" Stretch="Uniform" AutoSize="False" Visibility="Collapsed" Margin="0" Padding="0">
+                <ToolTipService.ToolTip>
+                    <ToolTip Background="#FFFFFFAF">
+                        <StackPanel>
+                            <ContentControl Content="The map legend of this layer"/>
+                        </StackPanel>
+                    </ToolTip >
+                </ToolTipService.ToolTip>
+            </ImageTools:AnimatedImage>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

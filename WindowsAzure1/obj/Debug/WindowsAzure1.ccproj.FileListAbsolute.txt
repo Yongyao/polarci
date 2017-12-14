@@ -1,0 +1,2 @@
+C:\Geosearch\GeoSearch-cisc-2012-07-23-jizhe\WindowsAzure1\bin\Debug\ServiceConfiguration.cscfg
+C:\Geosearch\GeoSearch-cisc-2012-07-23-jizhe\WindowsAzure1\bin\Debug\ServiceDefinition.csdef

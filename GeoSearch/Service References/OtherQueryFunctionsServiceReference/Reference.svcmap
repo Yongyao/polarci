@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eff447e9-1371-42d3-b8ea-bbe33a7ef120" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57278/OtherQueryFunctionsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OtherQueryFunctionsService2.wsdl" MetadataType="Wsdl" ID="147a9dd3-7ff6-44a9-b073-9c678c970654" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?wsdl" />
+    <MetadataFile FileName="OtherQueryFunctionsService1.disco" MetadataType="Disco" ID="56c3e7e7-af2b-4668-8b76-ea4e2e670cf6" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?disco" />
+    <MetadataFile FileName="OtherQueryFunctionsService3.xsd" MetadataType="Schema" ID="67d06454-456d-4632-84fc-93b0096ed8f5" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="OtherQueryFunctionsService31.xsd" MetadataType="Schema" ID="4a2bedf7-387f-4484-947d-8b1628cd86e7" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OtherQueryFunctionsService32.xsd" MetadataType="Schema" ID="2fabdbbb-4b00-439e-8f39-ea6dfc4f5c90" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OtherQueryFunctionsService21.wsdl" MetadataType="Wsdl" ID="b3717947-1fd6-4470-ab45-f7d3972e8046" SourceId="1" SourceUrl="http://localhost:57278/OtherQueryFunctionsService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

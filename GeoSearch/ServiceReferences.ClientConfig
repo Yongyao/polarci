@@ -1,0 +1,106 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_CSWQueryService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_OtherQueryFunctionsService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_QualityQueryService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_StatisticsService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+
+          
+          <endpoint address="http://oceanci.cloudapp.net/OtherQueryFunctionsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_OtherQueryFunctionsService"
+              contract="OtherQueryFunctionsServiceReference.OtherQueryFunctionsService"
+              name="CustomBinding_OtherQueryFunctionsService" />
+          <endpoint address="http://oceanci.cloudapp.net/CSWQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_CSWQueryService"
+              contract="CSWQueryServiceReference.CSWQueryService" name="CustomBinding_CSWQueryService" />
+          <endpoint address="http://oceanci.cloudapp.net/QualityQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_QualityQueryService"
+              contract="QualityQueryServiceReference.QualityQueryService"
+              name="CustomBinding_QualityQueryService" />
+          <endpoint address="http://oceanci.cloudapp.net/StatisticsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_StatisticsService"
+              contract="StatisticsServiceReference.StatisticsService" name="CustomBinding_StatisticsService" />
+         
+
+          <!--
+          <endpoint address="http://localhost:57278/OtherQueryFunctionsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_OtherQueryFunctionsService"
+              contract="OtherQueryFunctionsServiceReference.OtherQueryFunctionsService"
+              name="CustomBinding_OtherQueryFunctionsService" />
+          <endpoint address="http://localhost:57278/CSWQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_CSWQueryService"
+              contract="CSWQueryServiceReference.CSWQueryService" name="CustomBinding_CSWQueryService" />
+          <endpoint address="http://localhost:57278/QualityQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_QualityQueryService"
+              contract="QualityQueryServiceReference.QualityQueryService"
+              name="CustomBinding_QualityQueryService" />
+          <endpoint address="http://localhost:57278/StatisticsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_StatisticsService"
+              contract="StatisticsServiceReference.StatisticsService" name="CustomBinding_StatisticsService" />
+          -->
+
+          <!--<endpoint address="http://localhost:57278/OtherQueryFunctionsService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_OtherQueryFunctionsService"
+                contract="OtherQueryFunctionsServiceReference.OtherQueryFunctionsService"
+                name="CustomBinding_OtherQueryFunctionsService" />
+            <endpoint address="http://localhost:57278/CSWQueryService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_CSWQueryService"
+                contract="CSWQueryServiceReference.CSWQueryService" name="CustomBinding_CSWQueryService" />
+            <endpoint address="http://localhost:57278/QualityQueryService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_QualityQueryService"
+                contract="QualityQueryServiceReference.QualityQueryService"
+                name="CustomBinding_QualityQueryService" />
+            <endpoint address="http://localhost:57278/StatisticsService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_StatisticsService"
+                contract="StatisticsServiceReference.StatisticsService" name="CustomBinding_StatisticsService" />-->
+          <!--
+          <endpoint address="http://geosearch.cloudapp.net/OtherQueryFunctionsService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_OtherQueryFunctionsService"
+                contract="OtherQueryFunctionsServiceReference.OtherQueryFunctionsService"
+                name="CustomBinding_OtherQueryFunctionsService" />
+          <endpoint address="http://geosearch.cloudapp.net/CSWQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_CSWQueryService"
+              contract="CSWQueryServiceReference.CSWQueryService" name="CustomBinding_CSWQueryService" />
+          <endpoint address="http://geosearch.cloudapp.net/QualityQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_QualityQueryService"
+              contract="QualityQueryServiceReference.QualityQueryService"
+              name="CustomBinding_QualityQueryService" />
+          <endpoint address="http://geosearch.cloudapp.net/StatisticsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_StatisticsService"
+              contract="StatisticsServiceReference.StatisticsService" name="CustomBinding_StatisticsService" />
+          -->
+          
+          <!--<endpoint address="http://129.174.65.115:9090/CSWQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_CSWQueryService"
+              contract="CSWQueryServiceReference.CSWQueryService" name="CustomBinding_CSWQueryService" />
+          <endpoint address="http://129.174.65.115:9090/OtherQueryFunctionsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_OtherQueryFunctionsService"
+              contract="OtherQueryFunctionsServiceReference.OtherQueryFunctionsService"
+              name="CustomBinding_OtherQueryFunctionsService" />
+          <endpoint address="http://129.174.65.115:9090/QualityQueryService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_QualityQueryService"
+              contract="QualityQueryServiceReference.QualityQueryService"
+              name="CustomBinding_QualityQueryService" />
+          <endpoint address="http://129.174.65.115:9090/StatisticsService.svc"
+              binding="customBinding" bindingConfiguration="CustomBinding_StatisticsService"
+              contract="StatisticsServiceReference.StatisticsService" name="CustomBinding_StatisticsService" />-->
+        </client>
+    </system.serviceModel>
+</configuration>
